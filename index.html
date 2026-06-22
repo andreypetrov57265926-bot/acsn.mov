@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium cinematic LUT packs for filmmakers and colorists. Opening soon." />
+  <title>CHROMA LUTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="announcement" id="announcement">
+    <span>STORE OPENING SOON</span>
+    <button class="announcement__close" aria-label="Close announcement" id="close-announcement">×</button>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="header__nav header__nav--left"></nav>
+
+    <a href="#" class="header__logo" aria-label="CHROMA LUTS home">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="4" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="22" y="4" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="4" y="22" width="14" height="14" stroke="currentColor" stroke-width="1.5"/>
+        <rect x="22" y="22" width="14" height="14" fill="currentColor"/>
+      </svg>
+    </a>
+
+    <div class="header__nav header__nav--right"></div>
+  </header>
+
+  <main>
+    <section class="hero hero--landing">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span>LEVEL UP YOUR</span>
+          <span>COLOR GRADING</span>
+        </h1>
+        <div class="hero__cta">
+          <button type="button" class="btn btn--outline" data-open-notify>GET NOTIFIED →</button>
+          <button type="button" class="btn btn--filled" data-open-notify>STORE OPENING SOON →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands" aria-label="acsn.mov">
+      <div class="brands__track">
+        <span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span>
+        <span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span>
+        <span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span>
+        <span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span><span>acsn.mov</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="notify-overlay" id="notify-overlay" hidden></div>
+
+  <div class="notify-modal" id="notify-modal" hidden>
+    <button type="button" class="notify-modal__close" id="notify-close" aria-label="Close">×</button>
+    <p class="notify-modal__label">COMING SOON</p>
+    <h2 class="notify-modal__title">STORE OPENING SOON</h2>
+    <p class="notify-modal__text">
+      Leave your name and email — we'll notify you when the shop goes live.
+    </p>
+    <form class="notify-modal__form" id="notify-form">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <p class="notify-modal__error" id="notify-error" hidden>Something went wrong. Please try again.</p>
+      <button type="submit" class="btn btn--filled btn--block">NOTIFY ME</button>
+    </form>
+    <p class="notify-modal__success" id="notify-success" hidden>
+      You're on the list. We'll be in touch when the store opens.
+    </p>
+  </div>
+
+  <iframe name="sheet-iframe" id="sheet-iframe" title="Google Sheets submit" hidden></iframe>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/coming-soon.js"></script>
+</body>
+</html>
